@@ -22,11 +22,8 @@ const arrayMethods = {
     timeSpent: "3 hours",
 }
 notes.push(arrayMethods);
+const searchTerm = "iterations"
 for (const note of notes) {
-    console.log (`Note ${note.id}
-    ${note.date}
-    I learned ${note.subject} today.
-    ${note.feeling}
-    I spent ${note.timeSpent} on this subject.`
-    )
+    if (note.subject === searchTerm)
+    console.log(note)
 }
